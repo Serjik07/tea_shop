@@ -1,0 +1,28 @@
+@import './all.scss';
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Kanit&family=Mukta&family=Permanent+Marker&family=Satisfy&family=Ysabeau+Infant:wght@1&display=swap');
+@import '../../components/navbar/styles/navbar.scss';
+
+
+#Home {
+    background-image: url("../../images/hero-big.jpg");
+    background-size: cover;
+    transform-origin: center;
+    @include center();
+    .back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: black;
+        z-index: 98;
+        background-color: rgba(0, 0, 0, 0.4);
+        backdrop-filter: sepia(10%);
+    }
+    .h1 {
+        z-index: 99;
+        font-size: 2.5em;
+    }
+    .homeContainer {
+        @include center();
+    }
+}
+
